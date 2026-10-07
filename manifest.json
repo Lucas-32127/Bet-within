@@ -1,7 +1,7 @@
 {
   "name": "Odds Angola - Onde Paga Mais",
   "short_name": "Odds Angola",
-  "description": "Compare odds e descubra onde sua aposta paga mais em Angola",
+  "description": "Compare odds de Angola e descubra onde sua aposta paga mais",
   "start_url": "/Bet-within/",
   "display": "standalone",
   "background_color": "#0f172a",
@@ -14,7 +14,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "icon-192.png",
+      "src": "icon-512.png",
       "sizes": "192x192",
       "type": "image/png"
     }
