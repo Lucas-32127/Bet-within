@@ -1,51 +1,40 @@
-<!DOCTYPE html><html lang="pt"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Odds Angola • Onde Paga Mais?</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',Arial}body{background:#0a0e1a;color:#e6e8f0;padding-bottom:100px}header{position:sticky;top:0;z-index:99;background:rgba(10,14,26,.96);border-bottom:1px solid rgba(255,255,255,.06);padding:14px 16px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:900;font-size:18px}.logo span{color:#7c5cff}.pill{padding:6px 12px;border-radius:999px;font-size:10px;font-weight:800;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05)}.pill.green{background:rgba(52,199,89,.15);border-color:rgba(52,199,89,.3);color:#7CFF9B}.hero{margin:14px;border-radius:20px;padding:18px;background:linear-gradient(135deg,#1a2040 0%,#12152a 100%);border:1px solid rgba(255,255,255,.06)}.hero h1{font-size:20px;font-weight:900;line-height:1.1}.hero h1 span{color:#7CFF9B}.hero p{font-size:11px;opacity:.6;margin-top:8px;line-height:1.5}.affBox{margin:12px;background:rgba(124,92,255,.12);border:1px dashed rgba(124,92,255,.4);border-radius:14px;padding:12px}.affBox input{width:100%;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:10px;color:#a99cff;font-size:11px;margin-top:8px}.addBox{margin:12px;background:rgba(255,255,255,.04);border-radius:14px;padding:12px;display:grid;grid-template-columns:1fr 1fr;gap:8px}.addBox input, .addBox select{background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px;color:#fff;font-size:12px}.btn{background:#fff;color:#000;border:0;border-radius:10px;padding:12px;font-weight:900;font-size:12px;cursor:pointer;grid-column:span 2}.card{margin:12px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:18px;overflow:hidden}.card-head{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.02);border-bottom:1px solid rgba(255,255,255,.06)}.rowOdds{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;padding:12px 16px}.book{border-radius:12px;padding:10px;text-align:center;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);position:relative}.book.best{border-color:#7CFF9B;background:rgba(52,199,89,.12);transform:scale(1.05)}.book.best:after{content:'MELHOR';position:absolute;top:-8px;left:50%;transform:translateX(-50%);background:#7CFF9B;color:#000;font-size:7px;font-weight:900;padding:2px 6px;border-radius:999px}.book b{font-size:14px;display:block}.book small{font-size:9px;opacity:.6}.profit{margin:0 16px 12px;background:rgba(52,199,89,.1);border:1px solid rgba(52,199,89,.2);border-radius:10px;padding:10px;display:flex;justify-content:space-between;align-items:center}.btnBet{background:#7CFF9B;color:#000;border:0;border-radius:999px;padding:8px 14px;font-weight:900;font-size:11px;cursor:pointer;text-decoration:none}.footer{position:fixed;bottom:0;left:0;right:0;background:rgba(10,14,26,.98);border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-around;padding:12px 0}.footer div{font-size:9px;opacity:.6;font-weight:700;text-align:center;cursor:pointer}</style></head><body>
-<header><div class="logo">Odds<span>Angola</span></div><div style="display:flex;gap:6px"><div class="pill" id="date"></div><div class="pill green">● PAGA MAIS</div></div></header>
-<div class="hero"><h1>Para de perder dinheiro.<br><span>Aposte onde paga mais.</span></h1><p>Elephant 2.10 vs Bantu 2.45 = <b style="color:#7CFF9B">+16% lucro</b> no mesmo jogo. Esse app te mostra onde.</p></div>
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Odds Angola - Onde Paga Mais</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+<div class="max-w-md mx-auto p-4">
+  <header class="flex items-center gap-3 py-4">
+    <div class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center text-slate-900 font-black text-xl">OA</div>
+    <div>
+      <h1 class="font-bold text-lg leading-none">Odds Angola</h1>
+      <p class="text-xs text-slate-400">Onde sua aposta paga mais</p>
+    </div>
+  </header>
 
-<div class="affBox"><b style="font-size:11px">🔗 SEU LINK DE AFILIADO (onde você ganha)</b><br><small style="opacity:.6;font-size:10px">Cola teu link da Elephant/Bantu aqui. O botão APOSTAR vai usar ele.</small><input id="affLink" placeholder="https://www.elephantbet.co.ao/aff/seu-codigo" value="https://www.elephantbet.co.ao/" oninput="saveAff()"></div>
+  <div class="bg-slate-800 rounded-2xl p-4 mt-4">
+    <div class="flex justify-between text-xs text-slate-400 mb-2">
+      <span>Hoje - 20:00</span><span class="bg-green-500/20 text-green-400 px-2 rounded">AO VIVO</span>
+    </div>
+    <p class="font-bold">Petro de Luanda vs Primeiro de Agosto</p>
+    <div class="grid grid-cols-3 gap-2 mt-3">
+      <button class="bg-slate-700 p-3 rounded-xl"><div class="text-xs">1</div><div class="font-bold text-yellow-400">2.10</div><div class="text-[10px]">BantuBet</div></button>
+      <button class="bg-slate-700 p-3 rounded-xl border border-yellow-400"><div class="text-xs">X</div><div class="font-bold text-yellow-400">3.40</div><div class="text-[10px]">MELHOR</div></button>
+      <button class="bg-slate-700 p-3 rounded-xl"><div class="text-xs">2</div><div class="font-bold">2.85</div><div class="text-[10px]">Elephant</div></button>
+    </div>
+    <a href="#" class="block mt-3 bg-yellow-400 text-slate-900 text-center py-3 rounded-xl font-bold">Apostar onde paga mais</a>
+  </div>
 
-<div class="addBox">
-<input id="casa" placeholder="Time casa ex: Petro">
-<input id="fora" placeholder="Time fora ex: D'Agosto">
-<input id="oddE" type="number" step="0.01" placeholder="Odd Elephant ex: 2.10">
-<input id="oddB" type="number" step="0.01" placeholder="Odd BantuBet ex: 2.45">
-<input id="oddP" type="number" step="0.01" placeholder="Odd Placard ex: 2.30">
-<select id="mercado"><option>1X2 - Vitória Casa</option><option>1X2 - Empate</option><option>1X2 - Vitória Fora</option><option>Over 2.5</option><option>Ambas Marcam</option></select>
-<button class="btn" onclick="addGame()">+ ADICIONAR COMPARAÇÃO</button>
+  <p class="text-[10px] text-slate-500 text-center mt-6">+18 | Não somos casa de apostas. Apenas comparamos odds. Jogue com responsabilidade.</p>
 </div>
-
-<div id="feed"></div>
-<div class="footer"><div onclick="window.scrollTo({top:0,behavior:'smooth'})" style="opacity:1">◐<br>Comparar</div><div onclick="alert('Como ganha: 1) Pega link afiliado na Elephant Bet > Afiliados 2) Cola acima 3) Compartilha teu site no WhatsApp. Cada cadastro = 30% do lucro deles pra você. 10 amigos x 5000Kz = 15.000Kz/mês')">💰<br>Como Ganha</div><div onclick="document.getElementById('affLink').scrollIntoView({behavior:'smooth'})">🔗<br>Meu Link</div></div>
-
 <script>
-var games = [
-{casa:"Petro Luanda",fora:"1º de Agosto",mercado:"1X2 - Vitória Casa",oddE:2.10,oddB:2.45,oddP:2.30},
-{casa:"Arsenal",fora:"Man City",mercado:"Over 2.5",oddE:1.75,oddB:1.92,oddP:1.80},
-{casa:"Real Sociedad B",fora:"Granada",mercado:"Ambas Marcam",oddE:1.85,oddB:2.05,oddP:1.90},
-{casa:"Huesca",fora:"CE Europa",mercado:"Dupla X2",oddE:2.20,oddB:2.55,oddP:2.35}
-];
-var aff = localStorage.getItem('affAngola') || 'https://www.elephantbet.co.ao/';
-document.getElementById('affLink').value=aff;
-function saveAff(){aff=document.getElementById('affLink').value; localStorage.setItem('affAngola',aff); render();}
-function addGame(){
- var c=document.getElementById('casa').value, f=document.getElementById('fora').value;
- var e=parseFloat(document.getElementById('oddE').value), b=parseFloat(document.getElementById('oddB').value), p=parseFloat(document.getElementById('oddP').value);
- var m=document.getElementById('mercado').value;
- if(!c||!f||!e) return alert('Preenche time e odd Elephant');
- games.unshift({casa:c,fora:f,mercado:m,oddE:e,oddB:b||e,oddP:p||e});
- render(); document.getElementById('casa').value='';document.getElementById('fora').value='';
-}
-function render(){
- var feed=document.getElementById('feed'); var html='';
- games.forEach(g=>{
-   var best=Math.max(g.oddE,g.oddB,g.oddP);
-   var worst=Math.min(g.oddE,g.oddB,g.oddP);
-   var extra=((best/worst-1)*100).toFixed(1);
-   var bestBook = best===g.oddB?'BantuBet':(best===g.oddP?'Placard':'Elephant');
-   html+='<div class="card"><div class="card-head"><div><b>'+g.casa+' vs '+g.fora+'</b><br><small style="opacity:.5;font-size:10px">'+g.mercado+'</small></div><small style="color:#7CFF9B;font-weight:900">+'+extra+'% LUCRO</small></div><div class="rowOdds"><div class="book '+(g.oddE===best?'best':'')+'"><small>🐘 Elephant</small><b>'+g.oddE.toFixed(2)+'</b></div><div class="book '+(g.oddB===best?'best':'')+'"><small>🦁 BantuBet</small><b>'+g.oddB.toFixed(2)+'</b></div><div class="book '+(g.oddP===best?'best':'')+'"><small>🎫 Placard</small><b>'+g.oddP.toFixed(2)+'</b></div></div><div class="profit"><div><b style="font-size:11px">Melhor: '+bestBook+' @'+best.toFixed(2)+'</b><br><small style="opacity:.6;font-size:10px">Numa aposta de 1000 Kz, ganha '+(best*1000 - worst*1000).toFixed(0)+' Kz a mais</small></div><a class="btnBet" href="'+aff+'" target="_blank">Apostar →</a></div></div>';
- });
- feed.innerHTML=html;
- document.getElementById('date').innerText=new Date().toLocaleDateString('pt-AO',{day:'2-digit',month:'short'}).toUpperCase();
-}
-render();
-</script></body></html>
+if ('serviceWorker' in navigator) { navigator.serviceWorker.register('sw.js'); }
+</script>
+</body>
+</html>
